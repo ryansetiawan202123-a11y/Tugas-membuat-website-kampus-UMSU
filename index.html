@@ -1,159 +1,276 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Setiawan - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universitas Muhammadiyah Sumatera Utara</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ── NAVBAR ─────────────────────── -->
-  <nav class="navbar">
-    <div class="navbar__logo">
-      <span class="logo-icon">&#9670;</span>
-      <span class="logo-text">Ryan Setiawan</span>
-    </div>
+<!-- NAVBAR -->
+<header id="navbar">
 
-    <ul class="navbar__links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="navbar-container">
 
-    <div class="navbar__cta">
-      <a href="#contact" class="btn-primary">Hire Me</a>
-    </div>
-  </nav>
+<div class="navbar-logo">
+<div class="logo-bulat">UMSU</div>
 
-  <!-- ── HERO SECTION ────────────────── -->
-  <section class="hero" id="home">
-    <div class="hero__wrapper">
+<div class="logo-teks">
+<span class="logo-nama">Universitas Muhammadiyah Sumatera Utara</span>
+<span class="logo-sub">Unggul, Cerdas, Terpercaya</span>
+</div>
 
-      <div class="hero__image">
-        <img src="assets/images/ryan.jpg" alt="Ryan Setiawan">
-      </div>
+</div>
 
-    <div class="hero__content">
-      <span class="hero__badge">Available for Work</span>
-      <h1 class="hero__title">
-        Hallo , saya <span class="highlight">Ryan Setiawan</span><br>
-        Web Developer
-      </h1>
-      <p class="hero__desc">
-        Saya adalah mahasiswa Sistem Informasi Universitas Muhammadiyah Sumatera Utara
-        yang memiliki minat di bidang Web Development dan sedang mendalami HTML, CSS, 
-        serta JavaScript untuk membangun website yang modern dan responsif.
-      </p>
-      <div class="hero__actions">
-        <a href="#skills" class="btn-primary">Lihat Skills</a>
-        <a href="#contact" class="btn-outline">Hubungi Saya</a>
-      </div>
-    </div>
-  </section>
+<nav class="navbar-menu">
+<a href="#hero" class="menu-link">Beranda</a>
+<a href="#program" class="menu-link">Akademik</a>
+<a href="#berita" class="menu-link">Berita</a>
+<a href="#sambutan" class="menu-link">Tentang</a>
+<a href="#footer" class="menu-link">Kontak</a>
+</nav>
 
-  <!-- ── ABOUT SECTION ──────────────── -->
-  <section class="skills" id="about">
-    <div class="container">
-      <h2 class="section-title">Tentang Saya</h2>
-      <p class="section-subtitle">
-        Perkenalan Ryan Setiawan adalah seorang mahasiswa yang memiliki minat besar di bidang teknologi informasi, 
-        khususnya dalam pengembangan website (Web Development). Ia sedang menempuh pendidikan di jurusan Sistem Informasi 
-        dan aktif mempelajari berbagai teknologi seperti HTML, CSS, dan JavaScript.
-      </p>
+<button id="dark-toggle" class="tombol-dark">
+🌙 Dark Mode
+</button>
 
-      <div class="skills__grid">
-        <div class="skill-card">
-          <h3>Nama Lengkap</h3>
-          <p>Ryan Setiawan</p>
-        </div>
+</div>
 
-        <div class="skill-card">
-          <h3>Pendidikan</h3>
-          <p>Mahasiswa Sistem Informasi</p>
-        </div>
+</header>
 
-        <div class="skill-card">
-          <h3>Hobi</h3>
-          <p>Ngoding, Belajar Teknologi Baru, dan Desain Web</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ── SKILLS SECTION ──────────────── -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2 class="section-title">Keahlian Saya</h2>
-      <p class="section-subtitle">Teknologi yang saya kuasai</p>
+<!-- HERO -->
+<section id="hero">
 
-      <div class="skills__grid">
+<div class="hero-overlay">
 
-        <div class="skill-card">
-          <div class="skill-card__icon">&#128195;</div>
-          <h3>HTML5</h3>
-          <p>Mampu membuat struktur website yang rapi dan semantic.</p>
-        </div>
+<div class="hero-konten">
 
-        <div class="skill-card">
-          <div class="skill-card__icon">&#127912;</div>
-          <h3>CSS3</h3>
-          <p>Menggunakan Flexbox & Grid untuk membuat layout responsif.</p>
-        </div>
+<p class="hero-label">Selamat Datang di</p>
 
-        <div class="skill-card">
-          <div class="skill-card__icon">&#9889;</div>
-          <h3>JavaScript</h3>
-          <p>Membuat website interaktif dan dinamis.</p>
-        </div>
+<h1 class="hero-judul">
+Universitas Muhammadiyah Sumatera Utara
+</h1>
 
-        <div class="skill-card">
-          <div class="skill-card__icon">&#128279;</div>
-          <h3>Git & GitHub</h3>
-          <p>Mengelola versi project dan deploy ke GitHub Pages.</p>
-        </div>
+<p class="hero-sub">
+Kampus terdepan di Sumatera yang mencetak
+sumber daya manusia berkualitas, berdaya saing, dan berwawasan global sejak 1952.
+</p>
 
-      </div>
-    </div>
-  </section>
+<div class="hero-tombol-grup">
+<a href="#program" class="tombol-utama">
+Jelajahi Program Studi
+</a>
 
-  <!-- ── CONTACT SECTION ──────────────── -->
-  <section class="skills" id="contact">
-    <div class="container">
-      <h2 class="section-title">Kontak</h2>
-      <p class="section-subtitle">Hubungi saya melalui:</p>
+<a href="#sambutan" class="tombol-outline">
+Tentang UMSU
+</a>
+</div>
 
-      <div class="skills__grid">
-        <div class="skill-card">
-          <h3>Email</h3>
-          <p>ryansetiawan202123@gmail.com</p>
-        </div>
+</div>
+</div>
+</section>
 
-        <div class="skill-card">
-          <h3>Instagram</h3>
-          <p>owner_varblack23</p>
-        </div>
 
-        <div class="skill-card">
-          <h3>GitHub</h3>
-          <p>github.com/ryansetiawan202123-a11y</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- STATISTIK -->
+<section id="statistik">
 
-  <!-- ── FOOTER ──────────────────────── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <span class="footer__brand">&#9670; Ryan Setiawan</span>
-        <p class="footer__copy">
-          &copy; 2026 Ryan Setiawan. Dibuat dengan HTML & CSS.
-        </p>
-      </div>
-    </div>
-  </footer>
+<div class="statistik-container">
+
+<div class="stat-item">
+<span class="stat-angka" data-target="220">0</span>
+<span class="stat-satuan">+</span>
+<p class="stat-label">Program Studi</p>
+</div>
+
+<div class="stat-item">
+<span class="stat-angka" data-target="45000">0</span>
+<span class="stat-satuan">+</span>
+<p class="stat-label">Mahasiswa Aktif</p>
+</div>
+
+<div class="stat-item">
+<span class="stat-angka" data-target="2400">0</span>
+<span class="stat-satuan">+</span>
+<p class="stat-label">Dosen & Staf</p>
+</div>
+
+<div class="stat-item">
+<span class="stat-angka" data-target="72">0</span>
+<span class="stat-satuan">Thn</span>
+<p class="stat-label">Berdiri Sejak 1952</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- PROGRAM -->
+<section id="program">
+
+<div class="section-wrapper">
+
+<div class="section-header">
+<h2 class="section-judul">Program Pendidikan</h2>
+<p class="section-sub">
+UMSU menawarkan berbagai jenjang pendidikan berkualitas.
+</p>
+</div>
+
+<div class="program-grid">
+
+<div class="program-kartu">
+<div class="kartu-ikon">🎓</div>
+<h3 class="kartu-judul">Sarjana (S1)</h3>
+<p class="kartu-deskripsi">
+Program sarjana dengan banyak pilihan jurusan.
+</p>
+<a href="#" class="kartu-link">Lihat Program →</a>
+</div>
+
+<div class="program-kartu unggulan">
+<div class="kartu-ikon">📚</div>
+<h3 class="kartu-judul">Pascasarjana</h3>
+<p class="kartu-deskripsi">
+Program Magister dan Doktoral dengan riset internasional.
+</p>
+<a href="#" class="kartu-link">Lihat Program →</a>
+</div>
+
+<div class="program-kartu">
+<div class="kartu-ikon">🏥</div>
+<h3 class="kartu-judul">Profesi & Vokasi</h3>
+<p class="kartu-deskripsi">
+Program profesi dokter, apoteker dan vokasi.
+</p>
+<a href="#" class="kartu-link">Lihat Program →</a>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- BERITA -->
+<section id="berita">
+
+<div class="section-wrapper">
+
+<div class="section-header">
+<h2 class="section-judul">Berita Terkini</h2>
+<p class="section-sub">Informasi terbaru dari kampus.</p>
+</div>
+
+<div class="berita-grid">
+
+<article class="berita-kartu">
+<div class="berita-gambar">📰</div>
+<div class="berita-isi">
+<span class="berita-tanggal">12 Januari 2025</span>
+<h3 class="berita-judul">
+UMSU Raih Peringkat 5 Universitas Terbaik Indonesia Versi QS Ranking
+</h3>
+<a href="#" class="berita-link">Baca Selengkapnya →</a>
+</div>
+</article>
+
+<article class="berita-kartu">
+<div class="berita-gambar">📰</div>
+<div class="berita-isi">
+<span class="berita-tanggal">8 Januari 2025</span>
+<h3 class="berita-judul">
+Wisuda Periode I 2025: 2.800 Mahasiswa 
+Resmi Dinyatakan Lulus
+</h3>
+<a href="#" class="berita-link">Baca Selengkapnya →</a>
+</div>
+</article>
+
+<article class="berita-kartu">
+<div class="berita-gambar">📰</div>
+<div class="berita-isi">
+<span class="berita-tanggal">3 Januari 2025</span>
+<h3 class="berita-judul">
+UMSU Tanda Tangani MOU dengan 
+10 Universitas Luar Negeri
+</h3>
+<a href="#" class="berita-link">Baca Selengkapnya →</a>
+</div>
+</article>
+
+</div>
+</div>
+ 
+</section>
+
+
+<!-- SAMBUTAN -->
+<section id="sambutan">
+
+<div class="section-wrapper">
+
+<div class="sambutan-container">
+
+<div class="sambutan-gambar">
+<div class="foto-rektor">👨‍🏫</div>
+</div>
+
+<div class="sambutan-teks">
+
+<p class="sambutan-label">Sambutan Rektor</p>
+
+<h2 class="sambutan-nama">
+Prof. Dr. Agussani, MAP.
+</h2>
+
+<p class="sambutan-isi">
+Universitas Muhammadiyah Sumatera Utara terus
+berkomitmen menghasilkan lulusan yang tidak hanya unggul
+secara akademik, tetapi juga berkarakter kuat dan siap menghadapi
+tantangan global.
+</p>
+<p class="sambutan-isi">
+Dengan semangat inovasi dan kolaborasi, UMSU akan terus berkembang menjadi universitas 
+kelas dunia yang memberi manfaat nyata bagi masyarakat dan bangsa indonesia. 
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="footer">
+
+<div class="footer-container">
+
+<div class="footer-kolom">
+<div class="footer-logo">USU</div>
+<p class="footer-tagline">Berpikir, Berkata, Berbuat</p>
+</div>
+
+<div class="footer-kolom">
+<h4 class="footer-judul-kolom">Tautan Cepat</h4>
+<a href="#hero" class="footer-link">Beranda</a>
+<a href="#program" class="footer-link">Program</a>
+</div>
+
+</div>
+
+<div class="footer-bawah">
+<p>© 2025 Universitas Muhammadiyah Sumatera Utara</p>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
